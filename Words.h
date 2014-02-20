@@ -10,4 +10,6 @@
 
 @interface Words : NSObject
 
+@property (nonatomic, retain) NSString *text;
+
 @end

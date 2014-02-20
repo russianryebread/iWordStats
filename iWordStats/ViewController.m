@@ -7,9 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "Words.h"
 
 @implementation ViewController
 
+@synthesize label, console, activity;
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -34,11 +36,31 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    self.console.text = nil;
+    [activity stopAnimating];
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    
+}
+
+- (void)processWords1 {
+    NSDate *startDate = [NSDate date];
+    Words *words = [[Words alloc] init];
+    self.label.text = [NSString stringWithFormat:@"Finished. [Took %f seconds]", [[NSDate date] timeIntervalSinceDate: startDate]];
+    self.console.text = words.text;
+    [words release];
+    [activity stopAnimating];
+}
+
+- (IBAction)processWords:(id)sender {
+    self.console.text = nil;
+    self.label.text = @"Starting...";
+    [activity startAnimating];
+    [self performSelector:@selector(processWords1) withObject:nil afterDelay:.01];
 }
 
 - (void)viewWillDisappear:(BOOL)animated

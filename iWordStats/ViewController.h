@@ -10,4 +10,11 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, retain) IBOutlet UILabel *label;
+@property (nonatomic, retain) IBOutlet UITextView *console;
+@property (nonatomic, retain) IBOutlet UIActivityIndicatorView *activity;
+
+
+- (IBAction)processWords:(id)sender;
+- (void)processWords1;
 @end
