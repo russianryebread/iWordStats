@@ -8,13 +8,14 @@ benchmark utility for my personal iOS devices.
 
 **For Example:**
 
-|     Device     |   Speed   |
-|----------------|:---------:|
-| iPhone 3GS     |  9.8 sec. |
-| iPod (4th Gen) |  5.5 sec. |
-| iPad (2nd Gen) |  2.2 sec. |
-| iPhone 5s      |  0.5 sec. |
-| iPhone 7       |  0.32 sec |
+|     Device           |   Speed   |
+|----------------------|:---------:|
+| iPhone 3GS           |  9.8 sec. |
+| iPod (4th Gen)       |  5.5 sec. |
+| iPad (2nd Gen)       |  2.2 sec. |
+| iPad Mini (4th Gen)  |  0.6 sec. |
+| iPhone 5s            |  0.5 sec. |
+| iPhone 7             |  0.32 sec |
 
 
 
