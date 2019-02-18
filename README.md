@@ -14,6 +14,7 @@ benchmark utility for my personal iOS devices.
 | iPod (4th Gen) |  5.5 sec. |
 | iPad (2nd Gen) |  2.2 sec. |
 | iPhone 5s      |  0.5 sec. |
+| iPhone 7       |  0.32 sec |
 
 
 
