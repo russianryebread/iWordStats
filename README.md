@@ -16,6 +16,7 @@ benchmark utility for my personal iOS devices.
 | iPad Mini (4th Gen)  |  0.6 sec. |
 | iPhone 5s            |  0.5 sec. |
 | iPhone 7             |  0.32 sec |
+| iPhone 11            |  0.16 sec |
 
 
 
