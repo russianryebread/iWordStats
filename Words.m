@@ -13,7 +13,7 @@
 @synthesize text;
 - (id)init {
 	NSDate* startDate = [NSDate date];
-	NSLog(@"* * * * * * * * * * * * Word Stats v01 * * * * * * * * * * * * *\r\n");
+    NSLog(@"\r\n* * * * * * * * * * * * Word Stats v01 * * * * * * * * * * * * *\r\n");
 	
 	NSString *filePath = [[NSBundle mainBundle] pathForResource:@"words" ofType:@"txt"];
     NSString *stringFromFileAtPath = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
@@ -42,11 +42,11 @@
     }
     
     NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
-    [formatter setNumberStyle:kCFNumberFormatterDecimalStyle];
+    [formatter setNumberStyle:NSNumberFormatterDecimalStyle];
     
     NSLog(@"       Number of words: %lu", (unsigned long)wordCount);
-    NSLog(@"    Shortest Word [%2d]: %@", [shortestWord length], shortestWord);
-    NSLog(@"     Longest Word [%2d]: %@", [longestWord length], longestWord);
+    NSLog(@"    Shortest Word [%2lu]: %@", (unsigned long)[shortestWord length], shortestWord);
+    NSLog(@"     Longest Word [%2lu]: %@", [longestWord length], longestWord);
     NSLog(@"      Total Characters: %@", [formatter stringFromNumber:[NSNumber numberWithInteger:totalChars]]);
     NSLog(@"Total Bits [chars x 8]: %@", [formatter stringFromNumber:[NSNumber numberWithInteger:totalChars*8]]);
     NSLog(@"================================================================");
